@@ -31,7 +31,8 @@ bibliography:
 # math, see https://pandoc.org/MANUAL.html#math-rendering-in-html
 html-math-method:
   method: mathjax
-  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  #url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  url: "https://mathjax.rstudio.com/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"
 
 # code blocks
 highlight-style: pygments
@@ -51,3 +52,6 @@ html-q-tags: false
 
 # set to true if you want a preservation copy of the html output
 self-contained: false 
+
+include-in-header:
+  - source/includes/mathjax-config.html
