@@ -10,7 +10,7 @@ CHAPTERS=$(find source/chapters -name '*.md')
 
 # output configuration files
 HOME='--defaults assets/defaults/home.yml'
-HTML='--defaults assets/defaults/html.yml --mathjax'
+HTML='--defaults assets/defaults/html.yml'
 DOCX='--defaults assets/defaults/docx.yml'
 LATEX='--defaults assets/defaults/latex.yml --no-highlight'
 EPUB='--defaults assets/defaults/epub.yml --mathml --resource-path=.:source/images'
