@@ -1,12 +1,13 @@
 /* layout */
+
 .grid {
     grid-template-columns: 25% 1fr;
 }
 
 @media screen and (max-width: 600px) {
-  .grid {
-      grid-template-columns: 1fr;
-   }
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skip-link {
@@ -18,53 +19,58 @@
     transform: translateY(-100%);
     transition: transform 0.3s;
 }
-  
+
 .skip-link:focus {
     transform: translateY(0%);
 }
+
 
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {
     width: 6px;
-} 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-} 
-::-webkit-scrollbar-thumb {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
 
 /* headings */
 
 .sr-only {
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
+
 
 /* toc */
 
 .back {
     text-transform: uppercase;
     font-size: x-small;
-    color: yellow;
+    color: #1095c1;
 }
 
-aside > nav > ul > li > a {
-    color: #fff;
+aside>nav>ul>li>a {
+    color: #596b78;
     text-transform: uppercase;
     font-size: small;
 }
 
-aside > nav > ul > li > ul > li > a {
+aside>nav>ul>li>ul>li>a {
     font-size: x-small;
     margin-bottom: 0;
     padding-bottom: 0;
- }
+}
 
 @media (min-width: 992px) {
     main aside nav {
@@ -76,6 +82,7 @@ aside > nav > ul > li > ul > li > a {
         overflow-y: auto;
     }
 }
+
 
 /* box */
 

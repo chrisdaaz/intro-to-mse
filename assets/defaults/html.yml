@@ -5,7 +5,6 @@
 metadata-file: 
   - source/data/metadata.yml
   - source/data/config.yml
-  - source/data/definitions.yml
 
 from: markdown
 to: html5
@@ -21,11 +20,11 @@ toc-depth: 3
 number-sections: false
 number-offset: [0,0,0,0,0,0]
 
-#filters:
-#  - pandoc-crossref
+filters:
+  - pandoc-crossref
+  - citeproc
 
 # citations
-citeproc: true
 bibliography:
   - source/data/references.bib
 

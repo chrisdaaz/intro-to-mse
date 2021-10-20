@@ -1,19 +1,17 @@
 # website settings
 
 title-card-bg-color: "#3D2F5B"
+theme: light # light, dark
 
 cover: true
 toc-title: "Contents" 
 reference-section-title: "References" 
 
 format: # full-text outputs
-  - label: Documentation
-    link: documentation.html
-  - label: GitHub Template Repository
-    link: https://github.com/nulib-oer/lantern
-
-# pandoc-crossref option
-linkReferences: true
+  - label: Textbook
+    link: 201-301.html
+#  - label: GitHub Template Repository
+#    link: https://github.com/nulib-oer/lantern
 
 # print settings
 

@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 
 # textbook content settings
-OUTPUT_FILENAME=documentation
+OUTPUT_FILENAME=201-301
 OUTPUT_DIRECTORY=public
 
 # ignore lines 4-5 from original makefile
@@ -10,9 +10,9 @@ CHAPTERS=$(find source/chapters -name '*.md')
 
 # output configuration files
 HOME='--defaults assets/defaults/home.yml'
-HTML='--filter pandoc-crossref --defaults assets/defaults/html.yml --mathjax'
+HTML='--defaults assets/defaults/html.yml --mathjax'
 DOCX='--defaults assets/defaults/docx.yml'
-LATEX='--filter pandoc-crossref --defaults assets/defaults/latex.yml --no-highlight'
+LATEX='--defaults assets/defaults/latex.yml --no-highlight'
 EPUB='--defaults assets/defaults/epub.yml --mathml --resource-path=.:source/images'
 OAI='assets/empty.txt --defaults assets/defaults/oai.yml'
 
@@ -84,7 +84,7 @@ html() {
     awk 'FNR==1 && NR!=1 {print "\n\n"}{print}' $CHAPTERS >> chapters.md;
     mkdir -p $OUTPUT_DIRECTORY;
     $PANDOC_COMMAND assets/empty.txt $HOME -o public/index.html;
-    $PANDOC_COMMAND chapters.md $HTML -o public/documentation.html;
+    $PANDOC_COMMAND chapters.md $HTML -o public/201-301.html;
     cp -r source/images $OUTPUT_DIRECTORY;
     cp -r assets/lib $OUTPUT_DIRECTORY;
     cp -r assets/styles/ $OUTPUT_DIRECTORY;

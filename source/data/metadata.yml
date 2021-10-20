@@ -1,20 +1,21 @@
 # bibliographic metadata
 
-title: Lantern
-subtitle: a template and workflow toolkit for open textbooks
+title: Introduction to Materials Science and Engineering
+#subtitle: 
 
 author:
-  - name: Chris Diaz
+  - name: Jonathan Emery
     affiliation: Northwestern University
     orchid:
-  - name: Lauren McKeen McDonald
+  - name: Kenneth Shull
+    affiliation: Northwestern University
+    orchid:
+  - name: Jacob Kelter
     affiliation: Northwestern University
     orchid:
 
-contributor:
-  - Maria Palacio
-  - Angelina Jaglinski
-  - Sherry Wang
+#contributor:
+#  - 
 
 publication-year: 2021
 website: something
@@ -29,20 +30,10 @@ subjects:
   - Technology
 
 description: |
-  Lantern introduces and demonstrates a minimal computing approach to producing textbooks using free and open source software. Lantern provides an Pandoc template for building multiple formats of book-length educational works.
-  
-  - **Free:** Lantern uses open source software and free-of-charge web services for processing, building, deploying, and hosting open textbooks. 
-
-  - **Portable:** Lantern emphasizes the use of plain text file formats that can run on any machine or web host. No databases or servers are required. 
-
-  - **Multi-format:** Lantern teaches semantic markup technologies for producing Markdown, HTML, PDF, DOCX, and LaTeX editions of open textbooks. 
-
-  - **Sustainable:** Lantern minimizes the infrastructure, configuration, hosting, and maintenance costs related to traditional digital publishing systems and platforms.
-
-  - **Discoverable:** Lantern produces harvestable metadata in OAI-PMH, JSON-LD and Google Scholar tags.
+  This text introduces the core topics and foundational concepts of Materials Science and Engineering. It is structured within the framework of the Materials Science Paradgm. We cover introductory materials processing, structure, properties, and performance with particular emphasis on the relationship between structure and properties. We focus on conventional materials classes: metals, ceramics, and polymers -aand discuss their various properties - such as mechanical, electronic, thermal, optical, magnetic, and electrochemical. Broader themes that arise are how materials’ performance influences technological development, the economy, the environment, and society. This text is a pilot version intented to leverage computational tools to assist students in connecting conceptual understanding of materials science-relevent phenomenon with their mathematical models.
 
 copyright:
-  holder: Chris Diaz & Lauren McKeen McDonald
+  holder: The Authors
   # see https://rightsstatements.org/ for recommended statement and uri options
   statement: In Copyright 
   statement-uri: http://rightsstatements.org/vocab/InC/1.0/
@@ -56,3 +47,9 @@ publisher:
   website: https://library.northwestern.edu
 
 lang: en-us 
+
+# pandoc-crossref options (https://lierdakil.github.io/pandoc-crossref/#general-options)
+linkReferences: true
+figPrefix: 
+  - "Fig."
+  - "Figs."

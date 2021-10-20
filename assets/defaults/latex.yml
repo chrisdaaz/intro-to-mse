@@ -22,8 +22,11 @@ toc-depth: 3
 number-sections: false
 #secnumdepth
 
+filters:
+  - pandoc-crossref
+  - citeproc
+
 # citations
-citeproc: true
 bibliography:
   - source/data/references.bib
 

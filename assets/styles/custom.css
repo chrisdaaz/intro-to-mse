@@ -1,1 +1,25 @@
 /* add your custom styles below */
+
+div.hanging-indent {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+.hanging div.csl-entry {
+    margin-left: 2em;
+    text-indent: -2em;
+}
+
+div.csl-left-margin {
+    min-width: 2em;
+    float: left;
+}
+
+div.csl-right-inline {
+    margin-left: 2em;
+    padding-left: 1em;
+}
+
+div.csl-indent {
+    margin-left: 2em;
+}
