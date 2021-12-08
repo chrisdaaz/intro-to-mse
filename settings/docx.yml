@@ -3,14 +3,14 @@
 # https://pandoc.org/MANUAL.html#default-files
 
 metadata-file: 
-  - source/data/metadata.yml
-  - source/data/config.yml
+  - metadata.yml
+  - settings/config.yml
   - source/data/definitions.yml
 
 from: markdown
 to: docx
 
-reference-doc: assets/templates/docx.docx
+reference-doc: templates/docx.docx
 standalone: true
 
 # table of contents
@@ -23,7 +23,7 @@ number-sections: false
 # citations
 citeproc: true
 bibliography:
-  - source/data/references.bib
+  - references.bib
 
 # code blocks
 highlight-style: pygments

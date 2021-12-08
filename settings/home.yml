@@ -3,12 +3,12 @@
 # https://pandoc.org/MANUAL.html#default-files
 
 metadata-file: 
-  - source/data/metadata.yml
-  - source/data/config.yml
+  - metadata.yml
+  - settings/config.yml
 
 to: html5
 
-template: assets/templates/home.html
+template: templates/home.html
 standalone: true
 
 # table of contents

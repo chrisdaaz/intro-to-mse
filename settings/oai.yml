@@ -3,8 +3,8 @@
 # https://pandoc.org/MANUAL.html#default-files
 
 metadata-file: 
-  - source/data/metadata.yml
+  - metadata.yml
 
 to: plain
 
-template: assets/templates/oai.xml
+template: templates/oai.xml

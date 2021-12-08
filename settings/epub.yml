@@ -3,8 +3,8 @@
 # https://pandoc.org/MANUAL.html#default-files
 
 metadata-file: 
-  - source/data/metadata.yml
-  - source/data/config.yml
+  - metadata.yml
+  - settings/config.yml
   - source/data/definitions.yml
 
 epub-cover-image: source/images/cover.png
@@ -12,7 +12,7 @@ epub-cover-image: source/images/cover.png
 from: markdown
 to: epub3
 
-template: assets/templates/epub.html
+template: templates/epub.html
 standalone: true
 
 # table of contents
@@ -25,7 +25,7 @@ number-sections: false
 # citations
 citeproc: true
 bibliography:
-  - source/data/references.bib
+  - references.bib
 
 # code blocks
 highlight-style: pygments

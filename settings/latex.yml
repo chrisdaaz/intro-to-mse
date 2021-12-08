@@ -3,15 +3,15 @@
 # https://pandoc.org/MANUAL.html#default-files
 
 metadata-file: 
-  - source/data/metadata.yml
-  - source/data/config.yml
+  - metadata.yml
+  - settings/config.yml
   - source/data/definitions.yml
   
 from: markdown
 to: latex
 
 resource-path: ["source/images/"]
-template: assets/templates/lantern.tex
+template: templates/lantern.tex
 standalone: true
 
 # table of contents
@@ -28,7 +28,7 @@ filters:
 
 # citations
 bibliography:
-  - source/data/references.bib
+  - references.bib
 
 # code blocks
 highlight-style: pygments
