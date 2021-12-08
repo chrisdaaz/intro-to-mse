@@ -21,7 +21,7 @@ number-sections: false
 number-offset: [0,0,0,0,0,0]
 
 filters:
-  - pandoc-crossref
+#  - pandoc-crossref
   - citeproc
 
 # citations

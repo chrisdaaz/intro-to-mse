@@ -1,8 +1,6 @@
-# Preface
-
-This text introduces the core topics and foundational concepts of Materials Science and Engineering. It is structured within the framework of the Materials Science Paradigm @fig:MSEParadigm, which focuses in the causal relationship between materials processing, structural, properties, and performance (). We cover introductory materials processing, structure, properties, and performance with particular emphasis on the relationship between structure and properties. We focus on conventional materials classes: metals, ceramics, and polymers - and discuss their various properties - such as mechanical, electronic, thermal, optical, magnetic, and electrochemical. Broader themes that arise are how materials’ performance influences technological development, the economy, the environment, and society. This text is a pilot version intended to leverage computational tools to assist students in connecting conceptual understanding of materials science-relevant phenomenon with their mathematical models.
-
-![The Materials Science Paradigm](images/figures/MSE-paradigm.svg){#fig:MSEParadigm}
+---
+chapter: 0200
+---
 
 # Bonding to Crystal Structure
 
@@ -349,45 +347,3 @@ In reflecting on the model we built we can ask ourselves a couple questions:
    * **Directional Bonding** The LJ potential can only model bonds that are non-directional, because the LJ potential only depends on the absolute distance between atoms, not their relatively orientations. Non-direction bonding does occur in many materials and results in close-packed structures (e.g., solid phases of group 18 elements (He, Ne, Ar...)). However, there are many different crystal structures that form due in part to the influence of bond directionality. The LJ potential will not be able to predict these structures.
    
 In summary, makes it easy to understand and therefore useful for qualitatively explaining and reasoning about various mechanical properties of materials. For this reason, we will continue to use it at various points in the course. However, the simplicity of the LJ-potential means that there are many phenomena it can’t explain. For those phenomena, we will need other models. 
-
-# SIUNITX Package
-
-## TeX Code
-
-```tex
-\num{12345,67890} \\
-\num{1+-2i} \\ 
-\num{.3e45} \\ 
-\num{1.654 x 2.34 x 3.430} \\
-```
-
-### Rendering
-
-$$
-\num{12345,67890} \\
-\num{1+-2i} \\ 
-\num{.3e45} \\ 
-\num{1.654 x 2.34 x 3.430} \\
-$$
-
-## TeX Code
-
-```tex
-\si{kg.m.s^{-1}}                \\
-\si{\kilogram\metre\per\second} \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\second}  \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\ampere\per\second}
-```
-
-### Rendering
-
-$$
-\si{kg.m.s^{-1}}                \\
-\si{\kilogram\metre\per\second} \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\second}  \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\ampere\per\second}
-$$
