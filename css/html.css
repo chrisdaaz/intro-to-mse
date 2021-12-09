@@ -94,3 +94,19 @@ aside>nav>ul>li>ul>li>a {
     background: #3D2F5B;
     box-shadow: var(--card-box-shadow);
 }
+
+/* Questions */
+
+details {
+    background-color: var(--contrast);
+    padding: 1em;
+}
+
+details summary {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+details p {
+    color: var(--primary-inverse);
+}
