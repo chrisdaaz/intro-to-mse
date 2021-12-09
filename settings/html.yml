@@ -21,10 +21,10 @@ number-sections: false
 number-offset: [0,0,0,0,0,0]
 
 filters:
-#  - pandoc-crossref
-  - citeproc
+  - lib/lua/questions.lua
 
 # citations
+citeproc: true
 bibliography:
   - references.bib
 
