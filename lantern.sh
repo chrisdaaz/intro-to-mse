@@ -173,7 +173,7 @@ extract_metadata() {
 
 build_chapter_index() {
     echo "Building the chapter index..."
-    echo "{\"chapters\": [" > _temp/chapters.json
+    echo "{\"chapter_list\": [" > _temp/chapters.json
     local SEPARATOR=""
     for FILE in _temp/*.metadata.json; do
         printf '%s' "$SEPARATOR" >> _temp/chapters.json
@@ -241,6 +241,7 @@ html() {
         
         local basename="$(basename "$FILE" .md)"
         $pandoc_command "$FILE" \
+            --filter pandoc-crossref \
             --metadata-file _temp/chapters.json \
             --metadata siteurl=$siteurl \
             --metadata category_faux_urlencoded="$CATEGORY_FAUX_URLENCODED" \
