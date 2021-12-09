@@ -47,9 +47,3 @@ publisher:
   website: https://library.northwestern.edu
 
 lang: en-us 
-
-# pandoc-crossref options (https://lierdakil.github.io/pandoc-crossref/#general-options)
-linkReferences: true
-figPrefix: 
-  - "Fig."
-  - "Figs."

@@ -1,15 +1,15 @@
 # website settings
 
-title-card-bg-color: "#3D2F5B"
+#title-card-bg-color: "#3D2F5B"
 theme: light # light, dark
 
 cover: true
 toc-title: "Contents" 
 reference-section-title: "References" 
 
-format: # full-text outputs
-  - label: Textbook
-    link: 201-301.html
+#format: # full-text outputs
+#  - label: Textbook
+#    link: 201-301.html
 #  - label: GitHub Template Repository
 #    link: https://github.com/nulib-oer/lantern
 
@@ -26,3 +26,10 @@ paper:
     bottom: 1in
     left: 1in
     right: 1in
+
+# pandoc-crossref options (https://lierdakil.github.io/pandoc-crossref/#general-options)
+
+linkReferences: true
+figPrefix: 
+  - "Fig."
+  - "Figs."
