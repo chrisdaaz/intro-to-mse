@@ -98,15 +98,26 @@ aside>nav>ul>li>ul>li>a {
 /* Questions */
 
 details {
-    background-color: var(--contrast);
+    background-color: var(--color);
     padding: 1em;
 }
 
 details summary {
-    font-weight: bold;
-    color: var(--primary);
+    text-transform: uppercase;
+    font-size: smaller;
+    color: var(--background-color);
 }
 
 details p {
     color: var(--primary-inverse);
+    font-size: smaller;
+}
+
+details ol {
+    color: var(--primary-inverse);
+    font-size: smaller;
+}
+
+details[open]>summary {
+    color: var(--background-color);
 }

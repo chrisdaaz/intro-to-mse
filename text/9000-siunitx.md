@@ -2,7 +2,7 @@
 chapter: 9000
 ---
 
-# SIUNITX Package
+# siunitx Package
 
 ## TeX Code
 

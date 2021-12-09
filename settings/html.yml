@@ -21,7 +21,7 @@ number-sections: false
 number-offset: [0,0,0,0,0,0]
 
 filters:
-  - lib/lua/questions.lua
+  - lib/lua/solutions.lua
 
 # citations
 citeproc: true
