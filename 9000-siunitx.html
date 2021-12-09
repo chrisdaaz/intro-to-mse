@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="pandoc via Lantern" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/html.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Introduction to Materials Science and Engineering | Northwestern University Libraries</title>
+
+     <script src="https://mathjax.rstudio.com/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script> 
+
+    <!-- Loads AnchorJS library: https://www.bryanbraun.com/anchorjs/ -->
+    <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+
+    <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+     <!-- this file loads configurations for the MathJax JS library. Edit it to add TeX extensions -->
+<script type="text/x-mathjax-config">
+    MathJax.Ajax.config.path["mhchem"] = "./js"; 
+    MathJax.Ajax.config.path["siunitx"] = "./js"; 
+    MathJax.Hub.Config({ TeX: { extensions: ["[mhchem]/mhchem.js", "[siunitx]/siunitx.js"] } });
+</script> 
+</head>
+
+<body>
+    <h1 class="sr-only">Introduction to Materials Science and Engineering</h1>
+    
+    <main class="container">
+        <div class="grid">
+            <div class="toc">
+                <aside>
+                    <nav>
+                        <a href="index.html" class="back">
+                            Back to Home
+                        </a>
+                        <ul>                      
+                            <li><a href="0100-preface.html">Preface</a></li>                      
+                            <li><a href="0200-bonding.html">Bonding to Crystal Structure</a></li>                      
+                            <li><a href="9000-siunitx.html">SIUNITX Package</a></li>                      
+                            <li><a href="9100-mhchem.html">mhchem Package</a></li>                         
+                        </ul>
+                        <a href="#top" class="back">
+                            Back to Top
+                        </a>
+                    </nav>
+                </aside>
+            </div>
+            <div class="content" id="#top">
+                <h2></h2>
+                <h2 id="siunitx-package">SIUNITX Package</h2><h3 id="tex-code">TeX Code</h3><div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\num</span>{12345,67890} <span class="fu">\\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\num</span>{1+-2i} <span class="fu">\\</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\num</span>{.3e45} <span class="fu">\\</span> </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\num</span>{1.654 x 2.34 x 3.430} <span class="fu">\\</span></span></code></pre></div><h4 id="rendering">Rendering</h4><p><span class="math display">\[
+\num{12345,67890} \\
+\num{1+-2i} \\ 
+\num{.3e45} \\ 
+\num{1.654 x 2.34 x 3.430} \\
+\]</span></p><h3 id="tex-code-1">TeX Code</h3><div class="sourceCode" id="cb2"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\si</span>{kg.m.s^{-1}}                <span class="fu">\\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\si</span>{<span class="fu">\kilogram\metre\per\second</span>} <span class="fu">\\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\si</span>[per-mode=symbol]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">\kilogram\metre\per\second</span>}  <span class="fu">\\</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\si</span>[per-mode=symbol]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  {<span class="fu">\kilogram\metre\per\ampere\per\second</span>}</span></code></pre></div><h4 id="rendering-1">Rendering</h4><p><span class="math display">\[
+\si{kg.m.s^{-1}}                \\
+\si{\kilogram\metre\per\second} \\
+\si[per-mode=symbol]
+  {\kilogram\metre\per\second}  \\
+\si[per-mode=symbol]
+  {\kilogram\metre\per\ampere\per\second}
+\]</span></p> 
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+        /* pandoc creates two page titles; let's remove the first one */
+        page_titles = document.querySelectorAll('h2');
+        first = page_titles[0];
+        first.remove();
+
+    </script>
+
+    <script>
+        /* AnchorJS docs: https://www.bryanbraun.com/anchorjs/ */
+        anchors.add();
+    </script>
+
+    <script>
+        (function() {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+                    links[i].target = '_blank';
+                }
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
