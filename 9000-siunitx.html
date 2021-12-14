@@ -24,7 +24,13 @@
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path["mhchem"] = "./js"; 
     MathJax.Ajax.config.path["siunitx"] = "./js";
-    MathJax.Hub.Config({ TeX: { extensions: ["[mhchem]/mhchem.js", "[siunitx]/siunitx.js"] } });
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+        TeX: { extensions: [
+            "[mhchem]/mhchem.js",
+            "[siunitx]/siunitx.js"
+        ] }
+      });
 </script> 
 </head>
 
@@ -53,12 +59,75 @@
             </div>
             <div class="content" id="#top">
                 <h2></h2>
-                <h2 id="siunitx-package">siunitx Package</h2><h3 id="tex-code">TeX Code</h3><div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> n(O2)&amp;=<span class="fu">\SI</span>{.15}{<span class="fu">\mol</span>}<span class="fu">\qquad\qquad</span> &amp;n(Fe3O4)&amp;=<span class="fu">\SI</span>{0.3}{<span class="fu">\mol</span>}</span></code></pre></div><h4 id="rendering">Rendering</h4><p>[ n(O2)&amp;=&amp;n(Fe3O4)&amp;= ]</p><h3 id="tex-code-1">TeX Code</h3><div class="sourceCode" id="cb2"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>{kg.m.s^{-1}}                <span class="fu">\\</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>{<span class="fu">\kilogram\metre\per\second</span>} <span class="fu">\\</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>[per-mode=symbol]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    {<span class="fu">\kilogram\metre\per\second</span>}  <span class="fu">\\</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>[per-mode=symbol]</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    {<span class="fu">\kilogram\metre\per\ampere\per\second</span>}</span></code></pre></div><h4 id="rendering-1">Rendering</h4><p>[  \  \  \  ]</p> 
+                <h2 id="siunitx-package">siunitx Package</h2><div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  {</span><span class="sc">\num</span><span class="ss">{12345,67890}} </span><span class="sc">\\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  {</span><span class="sc">\num</span><span class="ss">{1+-2i}}       </span><span class="sc">\\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  {</span><span class="sc">\num</span><span class="ss">{.3e45}}       </span><span class="sc">\\</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">  {</span><span class="sc">\num</span><span class="ss">{1.654 x 2.34 x 3.430}}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span></code></pre></div><p><span class="math display">\[
+  \num{12345,67890} \\
+  \num{1+-2i}       \\
+  \num{.3e45}       \\
+  \num{1.654 x 2.34 x 3.430}
+\]</span></p><div class="sourceCode" id="cb2"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\si</span><span class="ss">{kg.m.s^{-1}}                </span><span class="sc">\\</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\si</span><span class="ss">{</span><span class="sc">\kilogram\metre\per\second</span><span class="ss">} </span><span class="sc">\\</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\si</span><span class="ss">[per-mode=symbol]</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">    {</span><span class="sc">\kilogram\metre\per\second</span><span class="ss">}  </span><span class="sc">\\</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\si</span><span class="ss">[per-mode=symbol]</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">    {</span><span class="sc">\kilogram\metre\per\ampere\per\second</span><span class="ss">}</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span></code></pre></div><p><span class="math display">\[
+  \si{kg.m.s^{-1}}                \\
+  \si{\kilogram\metre\per\second} \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\second}  \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\ampere\per\second}
+\]</span></p><div class="sourceCode" id="cb3"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\numlist</span><span class="ss">{10;20;30}                    </span><span class="sc">\\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\SIlist</span><span class="ss">{0.13;0.67;0.80}{</span><span class="sc">\milli\metre</span><span class="ss">} </span><span class="sc">\\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\numrange</span><span class="ss">{10}{20}                     </span><span class="sc">\\</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ss">  </span><span class="sc">\SIrange</span><span class="ss">{0.13}{0.67}{</span><span class="sc">\milli\metre</span><span class="ss">}</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span></code></pre></div><p><span class="math display">\[
+  \numlist{10;20;30}                    \\
+  \SIlist{0.13;0.67;0.80}{\milli\metre} \\
+  \numrange{10}{20}                     \\
+  \SIrange{0.13}{0.67}{\milli\metre}
+\]</span></p><div class="sourceCode" id="cb4"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{123}     <span class="fu">\\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{1234}    <span class="fu">\\</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{12345}   <span class="fu">\\</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{0.123}   <span class="fu">\\</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{0,1234}  <span class="fu">\\</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{.12345}  <span class="fu">\\</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{3.45d-4} <span class="fu">\\</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\num</span>{-e10}</span></code></pre></div><p><span class="math display">\[
+  \num{123}     \\
+  \num{1234}    \\
+  \num{12345}   \\
+  \num{0.123}   \\
+  \num{0,1234}  \\
+  \num{.12345}  \\
+  \num{3.45d-4} \\
+  \num{-e10}
+\]</span></p><div class="sourceCode" id="cb5"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$</span><span class="sc">\numlist</span><span class="ss">{10;30;50;70}$</span></span></code></pre></div><p>()</p><div class="sourceCode" id="cb6"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{10}    <span class="fu">\\</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{12.3}  <span class="fu">\\</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{4,5}   <span class="fu">\\</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{1;2;3} <span class="fu">\\</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{;;1}   <span class="fu">\\</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{+10;;} <span class="fu">\\</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ang</span>{-0;1;}</span></code></pre></div><p><span class="math display">\[
+  \ang{10}    \\
+  \ang{12.3}  \\
+  \ang{4,5}   \\
+  \ang{1;2;3} \\
+  \ang{;;1}   \\
+  \ang{+10;;} \\
+  \ang{-0;1;}
+\]</span></p><div class="sourceCode" id="cb7"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>{kg.m/s^2} <span class="fu">\\</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\si</span>{g_{polymer}~mol_{cat}.s^{-1}}</span></code></pre></div><p><span class="math display">\[
+  \si{kg.m/s^2} \\
+  \si{g_{polymer}~mol_{cat}.s^{-1}}
+\]</span></p> 
             </div>
         </div>
     </main>

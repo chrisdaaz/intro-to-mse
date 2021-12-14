@@ -427,7 +427,9 @@ proportional to the distance the end of the spring was displaced, \(x\).
 Similarly, when compressed along the \(-x\)-direction, there is a restorative
 force acting the the \(+x\) direction. Hooke's Law is written as
 
-\begin{equation}   F(x) = -k x \end{equation}\{\#eq:hooke\}
+\[
+  F(x) = -k x
+\]\{\#eq:hooke\}
 
 where \(k\) is the spring constant - a measure of how stiff the spring is. A
 higher \(k\) means a larger restoring force when the spring is displaced.
@@ -448,7 +450,9 @@ acting in the \(-x\) direction.}\label{fig:SpringSystem}
 We relate the force and the potential energy \(U(x)\) as a function of \(x\)
 by
 
-\begin{equation}  F(x) = - \frac{dU(x)}{dx} \end{equation}\{\#eq:pe\}
+\[
+ F(x) = - \frac{dU(x)}{dx}
+\]\{\#eq:pe\}
 
 Below, the \(U(x)\) is plotted as the purple dashed line. (\textbf{eq:pe?})
 says that the restoring force is equal the the derivative of the potential
@@ -924,47 +928,135 @@ phenomena it can't explain. For those phenomena, we will need other models.
 \hypertarget{siunitx-package}{%
 \chapter{siunitx Package}\label{siunitx-package}}
 
-\hypertarget{tex-code}{%
-\section{TeX Code}\label{tex-code}}
-
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{ n(O2)\&=}\FunctionTok{\textbackslash{}SI}\NormalTok{\{.15\}\{}\FunctionTok{\textbackslash{}mol}\NormalTok{\}}\FunctionTok{\textbackslash{}qquad\textbackslash{}qquad}\NormalTok{ \&n(Fe3O4)\&=}\FunctionTok{\textbackslash{}SI}\NormalTok{\{0.3\}\{}\FunctionTok{\textbackslash{}mol}\NormalTok{\}}
+\SpecialStringTok{$$}
+\SpecialStringTok{  \{}\SpecialCharTok{\textbackslash{}num}\SpecialStringTok{\{12345,67890\}\} }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  \{}\SpecialCharTok{\textbackslash{}num}\SpecialStringTok{\{1+{-}2i\}\}       }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  \{}\SpecialCharTok{\textbackslash{}num}\SpecialStringTok{\{.3e45\}\}       }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  \{}\SpecialCharTok{\textbackslash{}num}\SpecialStringTok{\{1.654 x 2.34 x 3.430\}\}}
+\SpecialStringTok{$$}
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{rendering}{%
-\subsection{Rendering}\label{rendering}}
-
-{[} n(O2)\&=\SI{.15}{\mol}\qquad\qquad\&n(Fe3O4)\&=\SI{0.3}{\mol} {]}
-
-\hypertarget{tex-code-1}{%
-\section{TeX Code}\label{tex-code-1}}
+\[
+  \num{12345,67890} \\
+  \num{1+-2i}       \\
+  \num{.3e45}       \\
+  \num{1.654 x 2.34 x 3.430}
+\]
 
 \begin{Shaded}
 \begin{Highlighting}[]
-  \FunctionTok{\textbackslash{}si}\NormalTok{\{kg.m.s\^{}\{{-}1\}\}                }\FunctionTok{\textbackslash{}\textbackslash{}}
-  \FunctionTok{\textbackslash{}si}\NormalTok{\{}\FunctionTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}second}\NormalTok{\} }\FunctionTok{\textbackslash{}\textbackslash{}}
-  \FunctionTok{\textbackslash{}si}\NormalTok{[per{-}mode=symbol]}
-\NormalTok{    \{}\FunctionTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}second}\NormalTok{\}  }\FunctionTok{\textbackslash{}\textbackslash{}}
-  \FunctionTok{\textbackslash{}si}\NormalTok{[per{-}mode=symbol]}
-\NormalTok{    \{}\FunctionTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}ampere\textbackslash{}per\textbackslash{}second}\NormalTok{\}}
+\SpecialStringTok{$$}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}si}\SpecialStringTok{\{kg.m.s\^{}\{{-}1\}\}                }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}si}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}second}\SpecialStringTok{\} }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}si}\SpecialStringTok{[per{-}mode=symbol]}
+\SpecialStringTok{    \{}\SpecialCharTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}second}\SpecialStringTok{\}  }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}si}\SpecialStringTok{[per{-}mode=symbol]}
+\SpecialStringTok{    \{}\SpecialCharTok{\textbackslash{}kilogram\textbackslash{}metre\textbackslash{}per\textbackslash{}ampere\textbackslash{}per\textbackslash{}second}\SpecialStringTok{\}}
+\SpecialStringTok{$$}
 \end{Highlighting}
 \end{Shaded}
 
-\hypertarget{rendering-1}{%
-\subsection{Rendering}\label{rendering-1}}
+\[
+  \si{kg.m.s^{-1}}                \\
+  \si{\kilogram\metre\per\second} \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\second}  \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\ampere\per\second}
+\]
 
-{[} \si{kg.m.s^{-1}} \textbackslash{} \si{\kilogram\metre\per\second}
-\textbackslash{} \si[per-mode=symbol]     {\kilogram\metre\per\second}
-\textbackslash{}
-\si[per-mode=symbol]     {\kilogram\metre\per\ampere\per\second} {]}
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$$}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}numlist}\SpecialStringTok{\{10;20;30\}                    }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}SIlist}\SpecialStringTok{\{0.13;0.67;0.80\}\{}\SpecialCharTok{\textbackslash{}milli\textbackslash{}metre}\SpecialStringTok{\} }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}numrange}\SpecialStringTok{\{10\}\{20\}                     }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}SIrange}\SpecialStringTok{\{0.13\}\{0.67\}\{}\SpecialCharTok{\textbackslash{}milli\textbackslash{}metre}\SpecialStringTok{\}}
+\SpecialStringTok{$$}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+  \numlist{10;20;30}                    \\
+  \SIlist{0.13;0.67;0.80}{\milli\metre} \\
+  \numrange{10}{20}                     \\
+  \SIrange{0.13}{0.67}{\milli\metre}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{123\}     }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{1234\}    }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{12345\}   }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{0.123\}   }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{0,1234\}  }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{.12345\}  }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{3.45d{-}4\} }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}num}\NormalTok{\{{-}e10\}}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+  \num{123}     \\
+  \num{1234}    \\
+  \num{12345}   \\
+  \num{0.123}   \\
+  \num{0,1234}  \\
+  \num{.12345}  \\
+  \num{3.45d-4} \\
+  \num{-e10}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}numlist}\SpecialStringTok{\{10;30;50;70\}$}
+\end{Highlighting}
+\end{Shaded}
+
+(\numlist{10;30;50;70})
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{10\}    }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{12.3\}  }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{4,5\}   }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{1;2;3\} }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{;;1\}   }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{+10;;\} }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}ang}\NormalTok{\{{-}0;1;\}}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+  \ang{10}    \\
+  \ang{12.3}  \\
+  \ang{4,5}   \\
+  \ang{1;2;3} \\
+  \ang{;;1}   \\
+  \ang{+10;;} \\
+  \ang{-0;1;}
+\]
+
+\begin{Shaded}
+\begin{Highlighting}[]
+  \FunctionTok{\textbackslash{}si}\NormalTok{\{kg.m/s\^{}2\} }\FunctionTok{\textbackslash{}\textbackslash{}}
+  \FunctionTok{\textbackslash{}si}\NormalTok{\{g\_\{polymer\}\textasciitilde{}mol\_\{cat\}.s\^{}\{{-}1\}\}}
+\end{Highlighting}
+\end{Shaded}
+
+\[
+  \si{kg.m/s^2} \\
+  \si{g_{polymer}~mol_{cat}.s^{-1}}
+\]
 
 \hypertarget{mhchem-package}{%
 \chapter{mhchem Package}\label{mhchem-package}}
 
-\hypertarget{tex-code-2}{%
-\section{TeX Code}\label{tex-code-2}}
+\hypertarget{tex-code}{%
+\section{TeX Code}\label{tex-code}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -972,38 +1064,38 @@ phenomena it can't explain. For those phenomena, we will need other models.
 \end{Highlighting}
 \end{Shaded}
 
+\hypertarget{rendering}{%
+\subsection{Rendering}\label{rendering}}
+
+\(\ce{CO2 + C -> 2 CO}\)
+
+\hypertarget{tex-code-1}{%
+\section{TeX Code}\label{tex-code-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}ce}\SpecialStringTok{\{\{Gluconic Acid\} + H2O2\}$}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{rendering-1}{%
+\subsection{Rendering}\label{rendering-1}}
+
+\(\ce{{Gluconic Acid} + H2O2}\)
+
+\hypertarget{tex-code-2}{%
+\section{TeX Code}\label{tex-code-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}ce}\SpecialStringTok{\{KCr(SO4)2.12H2O\}$}
+\end{Highlighting}
+\end{Shaded}
+
 \hypertarget{rendering-2}{%
 \subsection{Rendering}\label{rendering-2}}
 
-(\ce{CO2 + C -> 2 CO})
-
-\hypertarget{tex-code-3}{%
-\section{TeX Code}\label{tex-code-3}}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{\textbackslash{}(}\SpecialCharTok{\textbackslash{}ce}\SpecialStringTok{\{\{Gluconic Acid\} + H2O2\}\textbackslash{})}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{rendering-3}{%
-\subsection{Rendering}\label{rendering-3}}
-
-(\ce{{Gluconic Acid} + H2O2})
-
-\hypertarget{tex-code-4}{%
-\section{TeX Code}\label{tex-code-4}}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\SpecialStringTok{\textbackslash{}(}\SpecialCharTok{\textbackslash{}ce}\SpecialStringTok{\{KCr(SO4)2.12H2O\}\textbackslash{})}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{rendering-4}{%
-\subsection{Rendering}\label{rendering-4}}
-
-(\ce{KCr(SO4)2.12H2O})
+\(\ce{KCr(SO4)2.12H2O}\)
 
 \hypertarget{bibliography}{%
 \chapter*{References}\label{bibliography}}

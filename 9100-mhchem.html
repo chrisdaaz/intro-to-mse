@@ -24,7 +24,13 @@
 <script type="text/x-mathjax-config">
     MathJax.Ajax.config.path["mhchem"] = "./js"; 
     MathJax.Ajax.config.path["siunitx"] = "./js";
-    MathJax.Hub.Config({ TeX: { extensions: ["[mhchem]/mhchem.js", "[siunitx]/siunitx.js"] } });
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]},
+        TeX: { extensions: [
+            "[mhchem]/mhchem.js",
+            "[siunitx]/siunitx.js"
+        ] }
+      });
 </script> 
 </head>
 
@@ -53,7 +59,7 @@
             </div>
             <div class="content" id="#top">
                 <h2></h2>
-                <h2 id="mhchem-package">mhchem Package</h2><h3 id="tex-code">TeX Code</h3><div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$</span><span class="sc">\ce</span><span class="ss">{CO2 + C -&gt; 2 CO}$</span></span></code></pre></div><h4 id="rendering">Rendering</h4><p>()</p><h3 id="tex-code-1">TeX Code</h3><div class="sourceCode" id="cb2"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">\(</span><span class="sc">\ce</span><span class="ss">{{Gluconic Acid} + H2O2}\)</span></span></code></pre></div><h4 id="rendering-1">Rendering</h4><p>()</p><h3 id="tex-code-2">TeX Code</h3><div class="sourceCode" id="cb3"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">\(</span><span class="sc">\ce</span><span class="ss">{KCr(SO4)2.12H2O}\)</span></span></code></pre></div><h4 id="rendering-2">Rendering</h4><p>()</p> 
+                <h2 id="mhchem-package">mhchem Package</h2><h3 id="tex-code">TeX Code</h3><div class="sourceCode" id="cb1"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$</span><span class="sc">\ce</span><span class="ss">{CO2 + C -&gt; 2 CO}$</span></span></code></pre></div><h4 id="rendering">Rendering</h4><p><span class="math inline">\(\ce{CO2 + C -&gt; 2 CO}\)</span></p><h3 id="tex-code-1">TeX Code</h3><div class="sourceCode" id="cb2"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$</span><span class="sc">\ce</span><span class="ss">{{Gluconic Acid} + H2O2}$</span></span></code></pre></div><h4 id="rendering-1">Rendering</h4><p><span class="math inline">\(\ce{{Gluconic Acid} + H2O2}\)</span></p><h3 id="tex-code-2">TeX Code</h3><div class="sourceCode" id="cb3"><pre class="sourceCode tex"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ss">$</span><span class="sc">\ce</span><span class="ss">{KCr(SO4)2.12H2O}$</span></span></code></pre></div><h4 id="rendering-2">Rendering</h4><p><span class="math inline">\(\ce{KCr(SO4)2.12H2O}\)</span></p> 
             </div>
         </div>
     </main>
