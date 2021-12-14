@@ -286,10 +286,10 @@ start() {
 }
 
 all_formats() {
-    markdown
-    epub
-    docx
-    oai
+    #markdown
+    #epub
+    #docx
+    #oai
     pdf
     html
 }
