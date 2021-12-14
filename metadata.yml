@@ -21,13 +21,17 @@ publication-year: 2021
 website: something
 
 keywords:
-  - digital publishing
-  - pandoc
+  - open textbook
+  - oer
   - open educational resources
+  - metals
+  - ceramics
+  - polymers
 
 subjects: 
-  - Academic Libraries
-  - Technology
+  - Materials Science
+  - Engineering
+  - Chemistry
 
 description: |
   This text introduces the core topics and foundational concepts of Materials Science and Engineering. It is structured within the framework of the Materials Science Paradgm. We cover introductory materials processing, structure, properties, and performance with particular emphasis on the relationship between structure and properties. We focus on conventional materials classes: metals, ceramics, and polymers -aand discuss their various properties - such as mechanical, electronic, thermal, optical, magnetic, and electrochemical. Broader themes that arise are how materials’ performance influences technological development, the economy, the environment, and society. This text is a pilot version intented to leverage computational tools to assist students in connecting conceptual understanding of materials science-relevent phenomenon with their mathematical models.
