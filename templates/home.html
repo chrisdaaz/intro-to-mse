@@ -62,7 +62,7 @@
 </head>
 
 <body>
-    <a class="skip-link" href="#info">
+    <a class="skip-link" href="#toc">
         Skip to book information.
     </a> $for(include-before)$ $include-before$ $endfor$
 
@@ -91,18 +91,20 @@
                     $description$
                 </aside>
 
-
                 $if(download)$
                 <details open>
-                    <summary>Download</summary>
-                    $for(download)$<a href="$it.link$" role="button" class="secondary">$it.label$</a>$endfor$
+                    <summary>Read</summary>
+                    <a href="#toc" role="button" class="contrast">Online</a>
+                    $for(download)$
+                    <a href="$it.link$" role="button" class="contrast">$it.label$</a>
+                    $endfor$
                 </details>
                 $endif$
             </header>
             $endif$
             
             <hgroup>
-                <h2>$toc-title$</h2>
+                <h2 id="toc">$toc-title$</h2>
             </hgroup>
 
             <aside>

@@ -7,11 +7,11 @@ cover: true
 toc-title: "Contents" 
 reference-section-title: "References" 
 
-#format: # full-text outputs
-#  - label: Textbook
-#    link: 201-301.html
-#  - label: GitHub Template Repository
-#    link: https://github.com/nulib-oer/lantern
+download: # full-text outputs
+  - label: PDF
+    link: 201-301text.pdf
+  - label: Source
+    link: https://github.com/chrisdaaz/intro-to-mse
 
 # print settings
 
