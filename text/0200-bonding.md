@@ -318,6 +318,7 @@ Again, in reality, both atoms would feel a force from the interatomic potential 
 
 <iframe id="fig:LJMD"
     title="A Lennard Jones Molecular Dynamics model."
+    sandbox="allow-top-navigation"
     width="100%"
     height="400"
     src="https://ct-stem.s3.amazonaws.com/uploads/jzkelter/2021/04/12/lj%20potential_2021-04-12-11-34-17-571484.html">
