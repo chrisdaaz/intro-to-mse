@@ -43,9 +43,9 @@ Instead of spending to much time on atomic orbitals and electron configurations,
 
 Let's consider an idealized spring, shown in @fig:SpringSystem, which is governed by Hooke's Law. This spring is oriented in the $x$-direction, and one end is positioned at $x = 0$ when in equilibrium. When displaced in the positive $x$-direction, there is a restoring force $F$ acting to pull the spring's end back to $x=0$ that is linearly proportional to the distance the end of the spring was displaced, $x$. Similarly, when compressed along the $-x$-direction, there is a restorative force acting the the $+x$ direction. Hooke's Law is written as 
 
-\begin{equation}
+$$
   F(x) = -k x
-\end{equation}{#eq:hooke}
+$${#eq:hooke}
 
 where $k$ is the spring constant - a measure of how stiff the spring is. A higher $k$ means a larger restoring force when the spring is displaced. @fig:SpringSystem displays a red (solid) line that follows Hooke's law @eq:hooke as a function of $x$. 
 
@@ -53,9 +53,9 @@ where $k$ is the spring constant - a measure of how stiff the spring is. A highe
 
 We relate the force and the potential energy $U(x)$ as a function of $x$ by 
 
-\begin{equation}
+$$
  F(x) = - \frac{dU(x)}{dx}
-\end{equation}{#eq:pe}
+$${#eq:pe}
 
 Below, the $U(x)$ is plotted as the purple dashed line. @eq:pe says that the restoring force is equal the the derivative of the potential energy function. Intuitively, you can think of the potential function as a landscape that a ball is rolling around in. The ball feels force that causes it to roll downhill. The magnitude of that force is proportional to the slope at the the position it is located. When potential energy is at a local minimum  the force is zero (it is at equilibrium). The further the ball is displaced from this local minimum, the higher its energy.
 
@@ -145,7 +145,7 @@ In this [_NetLogo_ model](https://ct-stem.s3.amazonaws.com/uploads/jzkelter/2021
 
 Your job is to draw an interatomic potential function to model the way you think atoms behave, using the [embedded model](#SketchModel). We have already stated in the atomic hypothesis that atoms repel each other when squeezed together and attract each other when they are further apart. We can also deduce from observation that atoms must not attract each other very much when they are _very_ far apart, because otherwise everything would quickly condense into one giant blob. 
 
-<iframe
+<iframe id="SketchModel"
     title="How this _Netlogo_ model works."
     name="SketchModel"
     width="100%"
