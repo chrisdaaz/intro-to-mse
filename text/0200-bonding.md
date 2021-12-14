@@ -43,23 +43,19 @@ Instead of spending to much time on atomic orbitals and electron configurations,
 
 Let's consider an idealized spring, shown in @fig:SpringSystem, which is governed by Hooke's Law. This spring is oriented in the $x$-direction, and one end is positioned at $x = 0$ when in equilibrium. When displaced in the positive $x$-direction, there is a restoring force $F$ acting to pull the spring's end back to $x=0$ that is linearly proportional to the distance the end of the spring was displaced, $x$. Similarly, when compressed along the $-x$-direction, there is a restorative force acting the the $+x$ direction. Hooke's Law is written as 
 
-$$
 \begin{equation}
   F(x) = -k x
-\end{equation}
-$${#eq:hooke}
+\end{equation}{#eq:hooke}
 
 where $k$ is the spring constant - a measure of how stiff the spring is. A higher $k$ means a larger restoring force when the spring is displaced. @fig:SpringSystem displays a red (solid) line that follows Hooke's law @eq:hooke as a function of $x$. 
 
-![Three springs with equilibrium ($F=0$) positions of $x=0$. Spring 1 is in compression, with restorative force acting in the $+x$ direction. Spring 2 is at equilibrium. Spring 3 is in tension, with restorative force acting in the $-x$ direction.](images/figures/SpringSystem.svg){#fig:SpringSystem}
+![Three springs with equilibrium ($F=0$) positions of $x=0$. Spring 1 is in compression, with restorative force acting in the $+x$ direction. Spring 2 is at equilibrium. Spring 3 is in tension, with restorative force acting in the $-x$ direction.](images/figures/SpringSystem.png){#fig:SpringSystem}
 
 We relate the force and the potential energy $U(x)$ as a function of $x$ by 
 
-$$
 \begin{equation}
  F(x) = - \frac{dU(x)}{dx}
-\end{equation}
-$${#eq:pe}
+\end{equation}{#eq:pe}
 
 Below, the $U(x)$ is plotted as the purple dashed line. @eq:pe says that the restoring force is equal the the derivative of the potential energy function. Intuitively, you can think of the potential function as a landscape that a ball is rolling around in. The ball feels force that causes it to roll downhill. The magnitude of that force is proportional to the slope at the the position it is located. When potential energy is at a local minimum  the force is zero (it is at equilibrium). The further the ball is displaced from this local minimum, the higher its energy.
 
@@ -203,9 +199,7 @@ Now that you have worked to figure out what sort of shape an interatomic potenti
 The Lennard-Jones (LJ) potential, named after Sir John Edward Lennard-Jones, specifies the potential energy between two atoms, $U_{\text{LJ}}$, as function of the distance between them, $r$ (generalized from $x$):
 
 $$
-\begin{equation}
-  U_{\text{LJ}} = 4 \epsilon \left[\Big(\frac{\sigma}{r}\Big)^{12}-\Big(\frac{\sigma}{r}\Big)^6\right]
-\end{equation}
+U_{\text{LJ}} = 4 \epsilon \left[\Big(\frac{\sigma}{r}\Big)^{12}-\Big(\frac{\sigma}{r}\Big)^6\right]
 $${#eq:LJ}
 
 The two positive constants, $\sigma$ and $\epsilon$, can be adjusted to model different behaviors and yield different depths and widths to the potential. These constants are not derived. hey are parameters of the model that can be adjusted to fit experimental data. What they represent will be discussed below. Where do the exponents 12 and 6 come from? The 6<sup>th</sup> power term can be derived from quantum mechanical considerations due to the effect of fluctuating electron clouds. Interestingly, the 12<sup>th</sup> power term cannot actually be derived from more fundamental theory. It was selected for mathematical convenience and efficiency, but it serves well to model the interaction between atoms (and molecules) from the quantum mechanical phenomenon of Pauli repulsion.

@@ -18,7 +18,9 @@
 % be helpful for older software. Eventually it may not be worth keeping.
 %\usepackage[utf8]{inputenc}  
 
-\usepackage{amsmath} % Used by equations
+\usepackage{amsmath} % used by equations
+\usepackage{siunitx} % used for scientific measurements
+\usepackage[version=3]{mhchem} % used for chemical notation
 \usepackage{hyperref}
 % link options
 \hypersetup{
@@ -34,7 +36,7 @@
 \usepackage{array}
 \usepackage{graphicx}
 % sets image width to text body width
-\setkeys{Gin}{width=\linewidth} 
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \usepackage{xcolor}
 \definecolor{purple}{HTML}{663399}
 
@@ -55,13 +57,26 @@
 % Here is an alternative geometry for reading on letter size paper:
 % \usepackage[margin=.75in, paperwidth=8.5in, paperheight=11in]{geometry}
 
+\usepackage[normalem]{ulem} % underlined text
+
 \renewcommand{\contentsname}{$toc-title$} 
 
 % pandoc settings %
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-\newenvironment{Shaded}{
+%\newenvironment{Shaded}{
+%    \begin{center}
+%    \begin{tabular}{|p{0.9\textwidth}|}
+%    \hline\\
+%    }
+%    { 
+%    \\\\\hline
+%    \end{tabular} 
+%    \end{center}
+%}
+
+\newenvironment{shaded*}{
     \begin{center}
     \begin{tabular}{|p{0.9\textwidth}|}
     \hline\\
@@ -98,6 +113,9 @@ $if(csl-refs)$
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 $endif$
 
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
 
 % Content Starts Here
 \begin{document}
@@ -129,14 +147,14 @@ $endif$
 \vspace{\fill}
 
 \end{flushleft}
-
+$if(publisher)$
 \begin{center}
   %\includegraphics{booksvg.pdf}\\[4pt]
   \fontfamily{lmtt}\small{$publisher.name$\\
   $publisher.location$\\
   $publisher.website$}
 \end{center}
-  
+$endif$  
 \end{titlepage}
 \restoregeometry
 % ---- End of Half Title Page ----

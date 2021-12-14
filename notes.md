@@ -4,13 +4,6 @@ MSE 201_301 Textbook
 
 ~~By winter quarter
 
-	* Fix siunitx package in MathJax
-		- Mathmode and units
-		- not urgent
-
-	* Printing two reference sections
-		- not urgent
-
 	* “box” questions/sections with different background
 		- demo
 		- box around a group of questions

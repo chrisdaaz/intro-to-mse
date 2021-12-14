@@ -5,12 +5,11 @@
 metadata-file: 
   - metadata.yml
   - settings/config.yml
-  - source/data/definitions.yml
   
 from: markdown
 to: latex
 
-resource-path: ["source/images/"]
+resource-path: ["/images/figures/"]
 template: templates/lantern.tex
 standalone: true
 
@@ -23,10 +22,10 @@ number-sections: false
 #secnumdepth
 
 filters:
-  - pandoc-crossref
-  - citeproc
+  - lib/lua/latex-divs.lua
 
 # citations
+citeproc: true
 bibliography:
   - references.bib
 

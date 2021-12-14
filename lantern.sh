@@ -64,23 +64,7 @@ preprocess() {
 
 # lantern output formats
 
-pdf_context() {
-    # combine all markdown files into one
-    $pandoc_command text/*.md -o _temp/chapters.md
-    # convert markdown to ConTeXt
-    $pandoc_command _temp/chapters.md \
-        --to context \
-        --defaults settings/context.yml \
-        --output $output_directory/$output_filename.tex
-    # convert ConTeXt to PDF    
-    $pandoc_command _temp/chapters.md \
-        --to context \
-        --defaults settings/context.yml \
-        --output $output_directory/$output_filename.pdf
-    echo "📖 The PDF edition is now available in the $output_directory folder"
-}
-
-pdf_latex() {
+pdf() {
     # combine all markdown files into one
     $pandoc_command text/*.md -o _temp/chapters.md
     # convert markdown to LaTeX
@@ -90,6 +74,7 @@ pdf_latex() {
         --output $output_directory/$output_filename.tex
     # convert LaTeX to PDF    
     $pandoc_command _temp/chapters.md \
+        --filter pandoc-crossref \
         --to latex \
         --defaults settings/latex.yml \
         --output $output_directory/$output_filename.pdf
@@ -305,7 +290,7 @@ all_formats() {
     epub
     docx
     oai
-    pdf_context # change to pdf_latex if using LaTeX
+    pdf
     html
 }
 

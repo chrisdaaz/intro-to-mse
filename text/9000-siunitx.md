@@ -7,39 +7,33 @@ chapter: 9000
 ## TeX Code
 
 ```tex
-\num{12345,67890} \\
-\num{1+-2i} \\ 
-\num{.3e45} \\ 
-\num{1.654 x 2.34 x 3.430} \\
+ n(O2)&=\SI{.15}{\mol}\qquad\qquad &n(Fe3O4)&=\SI{0.3}{\mol}
 ```
 
 ### Rendering
 
-$$
-\num{12345,67890} \\
-\num{1+-2i} \\ 
-\num{.3e45} \\ 
-\num{1.654 x 2.34 x 3.430} \\
-$$
+\[
+ n(O2)&=\SI{.15}{\mol}\qquad\qquad &n(Fe3O4)&=\SI{0.3}{\mol}
+\]
 
 ## TeX Code
 
 ```tex
-\si{kg.m.s^{-1}}                \\
-\si{\kilogram\metre\per\second} \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\second}  \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\ampere\per\second}
+  \si{kg.m.s^{-1}}                \\
+  \si{\kilogram\metre\per\second} \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\second}  \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\ampere\per\second}
 ```
 
 ### Rendering
 
-$$
-\si{kg.m.s^{-1}}                \\
-\si{\kilogram\metre\per\second} \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\second}  \\
-\si[per-mode=symbol]
-  {\kilogram\metre\per\ampere\per\second}
-$$
+\[
+  \si{kg.m.s^{-1}}                \\
+  \si{\kilogram\metre\per\second} \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\second}  \\
+  \si[per-mode=symbol]
+    {\kilogram\metre\per\ampere\per\second}
+\]
